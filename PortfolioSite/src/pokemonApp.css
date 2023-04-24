@@ -1,0 +1,47 @@
+body {
+    background-color:#111418;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+h1 {
+    display:block;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: green;
+    text-shadow: 3px 3px 2px black;
+    
+}
+
+#pokeForm {
+    display:block;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#pokeData {
+    display: block;
+    margin: auto;
+    width: 600px;
+
+}
+
+h2 {
+    margin: auto;
+    display: inline;
+    color: yellow;
+    text-shadow: 3px 3px 2px black;
+}
+
+p {
+    margin: auto;
+    padding-left: 50px;
+    color: white;
+}
