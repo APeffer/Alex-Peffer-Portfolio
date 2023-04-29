@@ -9,6 +9,7 @@ class PokemonApp extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      sprite: '',
       textInputValue: '',
       typeValue: '',
       movesValue: '',
@@ -16,6 +17,7 @@ class PokemonApp extends Component {
   }
 
   capitalizeFirstLetter(string){
+    
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
@@ -23,10 +25,10 @@ class PokemonApp extends Component {
     // prevent page from reloading
     event.preventDefault();
 
-    let pokemonName = event.target.elements[0].value;
+    let pokemonName = this.capitalizeFirstLetter(event.target.elements[0].value);
 
     //create new url for API Fetch method
-    let newURL = urlBase + pokemonName;
+    let newURL = urlBase + pokemonName.toLowerCase();
     
     // fetch data from pokeAPI
     fetch(newURL)
@@ -34,6 +36,7 @@ class PokemonApp extends Component {
     .then(data => {
         this.setState({
           // change data values and set state for the results
+          sprite: data.sprites.front_default,
           textInputValue: `Name: ${this.capitalizeFirstLetter(data.name)}`, 
           typeValue: `Type: ${data.types.map(type => type.type.name).join(', ')}`, 
           movesValue: `Moves: ${data.moves.map(moves => moves.move.name).join(', ')}`
@@ -43,6 +46,7 @@ class PokemonApp extends Component {
       .catch(error => {
         console.log(error)
         this.setState({
+          sprite: '',
           textInputValue: 'That pokemon does not exist',
           typeValue: '', 
           movesValue: ''
@@ -50,11 +54,19 @@ class PokemonApp extends Component {
       });
   };
 
+  spriteDisplay() {
+    let displayPicture = "display: none"
+    if (this.state.sprite !== ''){
+      displayPicture = "display: block"
+  }
+  return(displayPicture)
+}
+
   render() {
     return(
       <>
         {/*pokemon logo*/}
-        <img src="images/PokemonLogo.svg" alt="Pokemon Logo" width="500" />
+        <img className="PokemonLogo" src="images/PokemonLogo.svg" alt="Pokemon Logo" width="500" />
         <h1>Enter a pokemon:</h1>
 
         {/*form and button*/}
@@ -66,7 +78,8 @@ class PokemonApp extends Component {
         </div>
 
         {/*Results area*/}
-        <div id="pokeData">
+        <div id="pokeData" style={{textAlign: this.state.textInputValue === 'That pokemon does not exist' ? "center" : "left"}}>
+          <img className="PokemonSprite" src={this.state.sprite} alt={this.state.textInputValue} style={{display: this.state.sprite !== '' ? "block" : "none"}} />
           <h2>{this.state.textInputValue}</h2>
           <br/>
           <p>{this.state.typeValue}</p>
