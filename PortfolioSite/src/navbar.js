@@ -7,6 +7,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <nav>
+        <div className="menu-button"> ≡ </div>
         <a href="/" className="site-title">Alex Peffer</a>
         <ul>
           <li>
@@ -15,7 +16,7 @@ function Navbar() {
           <li>
             <a href="/aboutMe">About Me</a>
           </li>
-        </ul>    
+        </ul>   
       </nav>
     </div>
   )

@@ -64,28 +64,30 @@ class PokemonApp extends Component {
 
   render() {
     return(
-      <>
+      <div className="pokemonApp-Container">
+
         {/*pokemon logo*/}
-        <img className="PokemonLogo" src="images/PokemonLogo.svg" alt="Pokemon Logo" width="500" />
+        <img className="PokemonLogo" src="images/PokemonLogo.svg" alt="Pokemon Logo" />
         <h1>Enter a pokemon:</h1>
 
         {/*form and button*/}
         <div id="pokeForm">
           <form onSubmit={this.submitHandler}>
-            <input type="text" name="pokeInput" placeholder="pokemon name/number"/>
+            <input type="text" name="pokeInput" placeholder="Pikachu" maxLength="12"/>
             <button type='submit'>Submit</button>
           </form>
         </div>
 
         {/*Results area*/}
         <div id="pokeData" style={{textAlign: this.state.textInputValue === 'That pokemon does not exist' ? "center" : "left"}}>
-          <img className="PokemonSprite" src={this.state.sprite} alt={this.state.textInputValue} style={{display: this.state.sprite !== '' ? "block" : "none"}} />
+          <img className="PokemonSprite" height="200px" width="200px" src={this.state.sprite} alt={this.state.textInputValue} style={{display: this.state.sprite !== '' ? "block" : "none"}} />
           <h2>{this.state.textInputValue}</h2>
           <br/>
           <p>{this.state.typeValue}</p>
           <p>{this.state.movesValue}</p>
         </div>
-      </>
+
+      </div>
     )
   }
 }
