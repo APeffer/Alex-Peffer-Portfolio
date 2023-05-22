@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './pokemonApp.css';
+import './index.css';
 
 const urlBase = 'https://pokeapi.co/api/v2/pokemon/';
 

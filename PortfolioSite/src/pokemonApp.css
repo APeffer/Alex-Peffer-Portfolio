@@ -1,8 +1,13 @@
 .pokemonApp-Container {
-    height: 100%;
+    position: absolute;
+    display: block;
+    height: calc(100% - 44px);
+    width: 100%;
+    z-index: 0;
     background-color:#111418;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center; 
+    overflow: auto;
 }
 
 .PokemonLogo {
@@ -64,10 +69,13 @@ h1 {
 
 
 #pokeData {
+    position: relative;
     display: block;
     margin: auto;
     width: 50%;
     min-width: 300px;
+    background-color:#111418;
+    padding-bottom: 50px;
 }
 
 #pokeData img {
@@ -89,4 +97,11 @@ p {
     margin: auto;
     padding-left: 50px;
     color: white;
+}
+
+@media screen and (max-width:800px) {
+    .pokemonApp-Container{
+        height: 100%;
+    }
+    
 }

@@ -11,7 +11,7 @@ export class App extends Component {
       <div className="App">
         <Navbar />
         <Body />
-        <PokemonApp className="pokemonApp" />
+        <PokemonApp/>
       </div>
     )
   }
