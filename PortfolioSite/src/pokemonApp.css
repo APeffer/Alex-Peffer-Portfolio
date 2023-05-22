@@ -39,6 +39,7 @@ h1 {
     border: none;
     background-color: #eee48c;
     border-right: 0;
+    border-radius: 0;
     outline: none;
 }
 
