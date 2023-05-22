@@ -67,7 +67,7 @@ class PokemonApp extends Component {
       <div className="pokemonApp-Container">
 
         {/*pokemon logo*/}
-        <img className="PokemonLogo" src="images/PokemonLogo.svg" alt="Pokemon Logo" />
+        <img className="PokemonLogo" src="images/PokemonLogo.png" alt="Pokemon Logo" />
         <h1>Enter a pokemon:</h1>
 
         {/*form and button*/}
