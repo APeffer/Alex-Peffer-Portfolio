@@ -5,9 +5,13 @@ function Navbar() {
 
 
   return (
-    <div className="navbar">
+    <>
+      <button className='menu-button-mobile'>
+        <div className='line'></div>
+        <div className='line'></div>
+        <div className='line'></div>
+      </button>
       <nav>
-        <div className="menu-button"> ≡ </div>
         <a href="/" className="site-title">Alex Peffer</a>
         <ul>
           <li>
@@ -18,7 +22,7 @@ function Navbar() {
           </li>
         </ul>   
       </nav>
-    </div>
+    </>
   )
 }
 
