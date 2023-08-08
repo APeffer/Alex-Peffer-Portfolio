@@ -1,20 +1,32 @@
-import React, {Component} from 'react'
 import Navbar from './navbar';
 import Body from './body';
+import Home from './Home';
+import AboutMe from './AboutMe';
+import Resume from './Resume';
+import Projects from './Projects';
 import PokemonApp from './pokemonApp';
+import { useState } from 'react';
 
-export class App extends Component {
 
+function App() {
+  const [bodyContent, setBodyContent] = useState(<Home/>)
 
-  render() {
     return (
       <div className="App">
-        <Navbar />
-        <Body />
-        <PokemonApp/>
+        <Navbar 
+          onHome={() => setBodyContent(<Home/>)}
+          onAboutMe={() => setBodyContent(<AboutMe/>)}
+          onResume={() => setBodyContent(<Resume/>)}
+          onProjects={() => setBodyContent(<Projects/>)}
+          onPokemonApp={() => setBodyContent(<PokemonApp/>)}
+          />
+          <div className='' style={{height: '100%'}}>
+            <Body>
+              {bodyContent}
+            </Body>
+          </div>
       </div>
-    )
-  }
+    );
 }
 
 export default App

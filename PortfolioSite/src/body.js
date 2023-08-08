@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
 
 
-
-export default function Body() {
-
-    const [view, setView] = useState('index')
-
+export default function Body({title, children, view}) {
   return (
     <div>
-        
+        {children}
     </div>
   )
 }
