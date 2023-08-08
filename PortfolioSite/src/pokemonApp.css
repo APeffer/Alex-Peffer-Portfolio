@@ -1,13 +1,10 @@
 .pokemonApp-Container {
-    position: absolute;
     display: block;
-    height: calc(100% - 44px);
     width: 100%;
     z-index: 0;
     background-color:#111418;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center; 
-    overflow: auto;
 }
 
 .PokemonLogo {

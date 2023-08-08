@@ -5,7 +5,7 @@ import AboutMe from './AboutMe';
 import Resume from './Resume';
 import Projects from './Projects';
 import PokemonApp from './pokemonApp';
-import { useState } from 'react';
+import { Children, useEffect, useState } from 'react';
 
 
 function App() {

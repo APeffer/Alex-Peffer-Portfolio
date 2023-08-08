@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function AboutMe() {
   return (
-    <div style={{height: '1200px', backgroundColor: '#c3c9b9'}}>
+    <div>
 
 
-        <div className="mb-5 text-center" style={{backgroundColor: '#c3c9b9'}}>
+        <div className="mb-5 text-center">
             <div className="p-2 text-center">
                 <h1>About Me</h1>
                 <h5 className=''>My name is Alex, but many people call me Peff.</h5>
@@ -15,11 +15,11 @@ export default function AboutMe() {
                     <h4>How'd you get started?</h4>
                     <p>
                         I started my software development journey by being interested in programming and having 
-                        a desire to make video games. As of now I have 1 completed published game through 
-                        Unity Game Engine. 
+                        a desire to make video games. As of now I have two completed published games through 
+                        Unity Game Engine and Gamemaker Studo 2.
                     </p>
                     <p>
-                        To play <strong>Grapple</strong> in your web browser through <i>itch.io </i>
+                        To play <strong>My Games</strong> in your web browser through <i>itch.io </i>
                         <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://ayypeff.itch.io/" target="_blank" rel='noreferrer'>click here</a> (best on mouse and keyboard)
                     </p>
                     

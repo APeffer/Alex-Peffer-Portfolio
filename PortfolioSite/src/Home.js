@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="" style={{height: '1200px', backgroundColor: '#a6a098'}}>
+    <div>
         <div className="container-lg">
             <div className="row">
                 <div className="col-md-5 text-center">
