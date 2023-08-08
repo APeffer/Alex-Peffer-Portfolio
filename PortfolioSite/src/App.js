@@ -11,8 +11,11 @@ import { Children, useEffect, useState } from 'react';
 function App() {
   const [bodyContent, setBodyContent] = useState(<Home/>)
 
+  document.body.style.backgroundColor = '#9c9184'
+
     return (
       <div className="App">
+        
         <Navbar 
           onHome={() => setBodyContent(<Home/>)}
           onAboutMe={() => setBodyContent(<AboutMe/>)}
