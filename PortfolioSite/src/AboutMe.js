@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div style={{height: '1200px', backgroundColor: '#c3c9b9'}}>
 
 
-        <div className="mb-5 text-center user-select-none" style={{backgroundColor: '#c3c9b9'}}>
+        <div className="mb-5 text-center" style={{backgroundColor: '#c3c9b9'}}>
             <div className="p-2 text-center">
                 <h1>About Me</h1>
                 <h5 className=''>My name is Alex, but many people call me Peff.</h5>
