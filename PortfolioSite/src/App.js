@@ -3,8 +3,9 @@ import Body from './body';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Resume from './Resume';
-import Projects from './Projects';
+import MyGames from './MyGames';
 import PokemonApp from './pokemonApp';
+import Contact from './Contact';
 import { Children, useEffect, useState } from 'react';
 
 
@@ -14,12 +15,13 @@ function App() {
     return (
       <div className="App">
         
-        <Navbar 
+        <Navbar
           onHome={() => setBodyContent(<Home/>)}
           onAboutMe={() => setBodyContent(<AboutMe/>)}
           onResume={() => setBodyContent(<Resume/>)}
-          onProjects={() => setBodyContent(<Projects/>)}
+          onMyGames={() => setBodyContent(<MyGames/>)}
           onPokemonApp={() => setBodyContent(<PokemonApp/>)}
+          onContact={() => setBodyContent(<Contact/>)}
           />
           <div className='' style={{height: '100%'}}>
             <Body>
