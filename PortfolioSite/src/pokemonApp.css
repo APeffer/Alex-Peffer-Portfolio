@@ -97,6 +97,38 @@
     color: white;
 }
 
+#pokeTooltipDropdown {
+    position: absolute;
+    text-align: left;
+    background-color: transparent;
+    width: 60px;
+    color: black;
+    filter: invert(1);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#pokeTooltipDropdown-content {
+    position: absolute;
+    visibility: hidden;
+    background-color: #cfccc5;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#pokeTooltipDropdown:hover #pokeTooltipDropdown-content{
+    width: 360px;
+    min-width: 360px;
+    visibility: visible;
+}
+
+#pokeTooltipDropdown-content p {
+    color: black;
+}
+
 @media screen and (max-width:800px) {
     .pokemonApp-Container{
         height: 100%;

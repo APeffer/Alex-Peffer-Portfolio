@@ -66,9 +66,24 @@ class PokemonApp extends Component {
     return(
       <div className="pokemonApp-Container">
 
+        {/* tooltip menu*/}
+        
+        <div id="pokeTooltipDropdown">
+          <img src='images\tooltip_icon.webp' width="60px" alt="tooltip icon" />
+          <div id="pokeTooltipDropdown-content">
+            <h5>About :</h5>
+            <p>This Pokemon themed application was the first project I built to learn about APIs. 
+                It uses the <a href='https://pokeapi.co/'>PokeApi</a> RESTful Pokemon API.
+            </p>
+            <p>
+              To use, enter any Pokemon name or number 1-1010.
+            </p>
+          </div>
+        </div>
+
         {/*pokemon logo*/}
         <img className="PokemonLogo" src="images/PokemonLogo.png" alt="Pokemon Logo" />
-        <h1 className="user-select-none" id="inputText">Enter a pokemon:</h1>
+        <h1 className="user-select-none" id="inputText">Enter a Pokemon:</h1>
 
         {/*form and button*/}
         <div id="pokeForm">
