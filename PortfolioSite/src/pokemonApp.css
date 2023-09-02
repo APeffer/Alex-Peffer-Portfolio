@@ -102,21 +102,21 @@
     text-align: left;
     background-color: transparent;
     width: 60px;
+    height: 60px;
     color: black;
     filter: invert(1);
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #pokeTooltipDropdown-content {
-    position: absolute;
+    position: relative;
     visibility: hidden;
     background-color: #cfccc5;
     border-radius: 10px;
     padding: 10px;
     z-index: 1;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #pokeTooltipDropdown:hover #pokeTooltipDropdown-content{
