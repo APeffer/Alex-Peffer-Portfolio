@@ -1,0 +1,20 @@
+@import './Animations.css';
+
+@media only screen and (min-width: 480px){
+    #aboutme-container h1 {
+        animation-name: slide-in-up, fade-in;
+        animation-duration: 1s;
+    }
+
+    #aboutme-container h5 {
+        animation-name: slide-in-up, fade-in;
+        animation-duration: 1s;
+    }
+
+    #aboutme-body h4{
+        animation-name: slide-in-up, fade-in;
+        animation-duration: 1s;
+    }
+    
+}
+

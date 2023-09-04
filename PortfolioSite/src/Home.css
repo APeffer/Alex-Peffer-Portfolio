@@ -1,0 +1,21 @@
+@import './Animations.css';
+
+@media only screen and (min-width: 480px) {
+    #headshot-img {
+        animation-name: slide-in-right, fade-in;
+        animation-duration: 1s;
+    }
+    
+    #splash-text {
+        animation-name: slide-in-left, fade-in;
+        animation-duration: 1s;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    
+    #splash-text {
+        animation-name: slide-in-down, fade-in;
+        animation-duration: 1s;
+    }
+}

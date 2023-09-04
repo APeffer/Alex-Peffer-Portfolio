@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './AboutMe.css';
 
 export default function AboutMe() {
   return (
-    <div>
+    <div id='aboutme-container'>
 
 
         <div className="mb-5 text-center">
@@ -10,7 +11,7 @@ export default function AboutMe() {
                 <h1>About Me</h1>
                 <h5 className=''>My name is Alex, but many people call me Peff.</h5>
             </div>
-            <div className="p-5 text-center bg-body-tertiary">
+            <div className="p-5 text-center bg-body-tertiary" id='aboutme-body'>
                 <div className='container py-4'>
                     <h4>How'd you get started?</h4>
                     <p>
