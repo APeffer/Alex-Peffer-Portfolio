@@ -1,6 +1,6 @@
 import React from "react"
 
-function Navbar({onHome, onAboutMe, onResume, onMyGames, onPokemonApp, onContact}) {
+function Navbar({onHome, onAboutMe, onMyProjects, onPokemonApp, onContact}) {
   
   function clickHandler(e){
     switch (e.target.value){
@@ -11,18 +11,13 @@ function Navbar({onHome, onAboutMe, onResume, onMyGames, onPokemonApp, onContact
         break;
       case 'aboutme':
         console.log("aboutme");
-        document.body.style.backgroundColor = '#c3c9b9';
+        document.body.style.backgroundColor = '#FFFFFF';
         onAboutMe();
         break;
-      case 'resume':
-        console.log("resume");
+      case 'myprojects':
+        console.log("myprojects");
         document.body.style.backgroundColor = '#FFFFFF';
-        onResume();
-        break;
-      case 'mygames':
-        console.log("mygames");
-        document.body.style.backgroundColor = '#FFFFFF';
-        onMyGames();
+        onMyProjects();
         break;
       case 'pokemonapp':
         document.body.style.backgroundColor = '#111418';
@@ -34,7 +29,9 @@ function Navbar({onHome, onAboutMe, onResume, onMyGames, onPokemonApp, onContact
         console.log('contact');
         onContact();
         break;
-
+      default:
+        document.body.style.backgroundColor = '#FFFFFF';
+        console.log("default");
     }
   }
 
@@ -58,10 +55,7 @@ function Navbar({onHome, onAboutMe, onResume, onMyGames, onPokemonApp, onContact
                     <button className="nav-link" onClick={clickHandler} value={'aboutme'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >About Me</button>
                   </li>
                   <li className="nav-item">
-                    <button className="nav-link" onClick={clickHandler} value={'resume'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Resume</button>
-                  </li>
-                  <li className="nav-item">
-                    <button className="nav-link" onClick={clickHandler} value={'mygames'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">My Games</button>
+                    <button className="nav-link" onClick={clickHandler} value={'myprojects'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">My Projects</button>
                   </li>
                   <li className="nav-item">
                     <button className="nav-link" onClick={clickHandler} value={'pokemonapp'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Pokemon App</button>
@@ -72,7 +66,6 @@ function Navbar({onHome, onAboutMe, onResume, onMyGames, onPokemonApp, onContact
                     <button className="nav-link" onClick={clickHandler} value={'contact'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</button>
                   </li>
                 </ul>
-                
               </div>
             </div>
         </nav>

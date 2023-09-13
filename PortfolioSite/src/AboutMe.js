@@ -6,34 +6,41 @@ export default function AboutMe() {
     <div id='aboutme-container'>
 
 
-        <div className="mb-5 text-center">
-            <div className="p-2 text-center">
+        <div className="text-center">
+            <div className="p-5 p-md-5 text-center">
                 <h1>About Me</h1>
-                <h5 className=''>My name is Alex, but many people call me Peff.</h5>
             </div>
-            <div className="p-5 text-center bg-body-tertiary" id='aboutme-body'>
-                <div className='container py-4'>
-                    <h4>How'd you get started?</h4>
-                    <p>
-                        I started my software development journey by being interested in programming and having 
-                        a desire to make video games. As of now I have two completed published games through 
-                        Unity Game Engine and Gamemaker Studo 2.
-                    </p>
-                    <p>
-                        To play <strong>My Games</strong> in your web browser through <i>itch.io </i>
-                        <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://ayypeff.itch.io/" target="_blank" rel='noreferrer'>click here</a> (best on mouse and keyboard)
-                    </p>
-                    
+            <div className="" id='aboutme-body'>
+                <div className='p-3'>
+                    <h2 className='' id='skills-header'><strong>Strong Skills:</strong></h2>
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-html-96.png' alt="HTML icon" />
+                        <p>HTML</p>
+                    </div>
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-css-96.png' alt="CSS icon" />
+                        <p>CSS</p>
+                    </div>                
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-sass-96.png' alt="Sass icon" />
+                        <p>Sass</p>
+                    </div>                   
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-bootstrap-96.png' alt="Bootstrap icon" />
+                        <p>Bootstrap</p>
+                    </div>                   
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-javascript-96.png' alt="JavaScript icon" />
+                        <p>JavaScript</p>
+                    </div>
+                <div className='p-3'>
+                    <h2 id='skills-header'><strong>Other Skills:</strong></h2>
+                    <img src='./images/icons/icons8-react-native-96.png' alt="React icon" />
+                    <img src='./images/icons/icons8-nodejs-96.png' alt="Node.js icon" />
+                    <img src='./images/icons/icons8-mysql-96.png' alt="MySQL icon" />
                 </div>
-                <div className='container py-4'>
-                    <h4>Why Web?</h4>
-                    <p>I've always loved programming and web was the quickest way that made sense for me to start 
-                        being able to see the results of my code. After realizing that I don't think I'd be interested 
-                        in making someone else's game ideas for them in an office, I decided web was a way that I could 
-                        potentially still work in the video game industry around a familiar environment. Additionally, 
-                        I thought that I might be able to make some fun webapps using APIs from games I enjoy to make 
-                        cool stuff that my friends might find useful.
-                    </p>
+                    
+
                 </div>
             </div>    
         </div>

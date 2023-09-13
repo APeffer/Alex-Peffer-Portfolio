@@ -1,5 +1,34 @@
 @import './Animations.css';
 
+#aboutme-container {
+    min-height: 100vh;
+    background-image: url("../public/images/backgrounds/Planetbackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: transparent;
+}
+
+#aboutme-body img {
+    margin: 10px;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+#aboutme-body img:hover {
+    background-color: rgba(200, 200, 200, 0.1);
+
+}
+
+.skill-dropdown{
+    display: inline-block;
+}
+
+#skills-header {
+    text-shadow: 3px 3px 3px #000000;
+}
+
 @media only screen and (min-width: 480px){
     #aboutme-container h1 {
         animation-name: slide-in-up, fade-in;

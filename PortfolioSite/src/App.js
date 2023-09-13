@@ -2,11 +2,10 @@ import Navbar from './navbar';
 import Body from './body';
 import Home from './Home';
 import AboutMe from './AboutMe';
-import Resume from './Resume';
-import MyGames from './MyGames';
+import MyProjects from './MyProjects';
 import PokemonApp from './pokemonApp';
 import Contact from './Contact';
-import { Children, useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 function App() {
@@ -18,8 +17,7 @@ function App() {
         <Navbar
           onHome={() => setBodyContent(<Home/>)}
           onAboutMe={() => setBodyContent(<AboutMe/>)}
-          onResume={() => setBodyContent(<Resume/>)}
-          onMyGames={() => setBodyContent(<MyGames/>)}
+          onMyProjects={() => setBodyContent(<MyProjects/>)}
           onPokemonApp={() => setBodyContent(<PokemonApp/>)}
           onContact={() => setBodyContent(<Contact/>)}
           />
