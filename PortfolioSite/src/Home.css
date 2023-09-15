@@ -1,7 +1,6 @@
 @import './Animations.css';
 
 #home-container {
-    min-height: 100vh;
     background-color: transparent;
 }
 

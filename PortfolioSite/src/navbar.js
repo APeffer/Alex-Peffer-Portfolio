@@ -1,6 +1,6 @@
 import React from "react"
 
-function Navbar({onHome, onAboutMe, onMyProjects, onPokemonApp, onContact}) {
+function Navbar({onHome, onAboutMe, onProjects, onGames, onContact}) {
   
   function clickHandler(e){
     switch (e.target.value){
@@ -14,15 +14,15 @@ function Navbar({onHome, onAboutMe, onMyProjects, onPokemonApp, onContact}) {
         document.body.style.backgroundColor = '#FFFFFF';
         onAboutMe();
         break;
-      case 'myprojects':
-        console.log("myprojects");
+      case 'projects':
+        console.log("projects");
         document.body.style.backgroundColor = '#FFFFFF';
-        onMyProjects();
+        onProjects();
         break;
-      case 'pokemonapp':
+      case 'games':
         document.body.style.backgroundColor = '#111418';
-        console.log("pokemonapp");
-        onPokemonApp();
+        console.log("games");
+        onGames();
         break;
       case 'contact':
         document.body.style.backgroundColor = '#FFFFFF';
@@ -55,10 +55,10 @@ function Navbar({onHome, onAboutMe, onMyProjects, onPokemonApp, onContact}) {
                     <button className="nav-link" onClick={clickHandler} value={'aboutme'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >About Me</button>
                   </li>
                   <li className="nav-item">
-                    <button className="nav-link" onClick={clickHandler} value={'myprojects'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">My Projects</button>
+                    <button className="nav-link" onClick={clickHandler} value={'projects'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Projects</button>
                   </li>
                   <li className="nav-item">
-                    <button className="nav-link" onClick={clickHandler} value={'pokemonapp'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Pokemon App</button>
+                    <button className="nav-link" onClick={clickHandler} value={'games'} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Games</button>
                   </li>
                 </ul>
                 <ul className="navbar-nav">

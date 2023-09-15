@@ -7,11 +7,11 @@ export default function AboutMe() {
 
 
         <div className="text-center">
-            <div className="p-5 p-md-5 text-center">
+            <div className="p-5 p-md-5 text-center" id='aboutme-header'>
                 <h1>About Me</h1>
             </div>
             <div className="" id='aboutme-body'>
-                <div className='p-3'>
+                <div className='p-3' id = 'strong-skills'>
                     <h2 className='' id='skills-header'><strong>Strong Skills:</strong></h2>
                     <div className='skill-dropdown'>
                         <img src='./images/icons/icons8-html-96.png' alt="HTML icon" />
@@ -33,11 +33,24 @@ export default function AboutMe() {
                         <img src='./images/icons/icons8-javascript-96.png' alt="JavaScript icon" />
                         <p>JavaScript</p>
                     </div>
-                <div className='p-3'>
+
+                <div className='p-3' id='other-skills'>
                     <h2 id='skills-header'><strong>Other Skills:</strong></h2>
-                    <img src='./images/icons/icons8-react-native-96.png' alt="React icon" />
-                    <img src='./images/icons/icons8-nodejs-96.png' alt="Node.js icon" />
-                    <img src='./images/icons/icons8-mysql-96.png' alt="MySQL icon" />
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-react-native-96.png' alt="React icon" />
+                        <p>React.js</p>
+                    </div>
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-nodejs-96.png' alt="Node.js icon" />
+                        <p>Node.js</p>
+                    </div>
+                    <div className='skill-dropdown'>
+                        <img src='./images/icons/icons8-mysql-96.png' alt="MySQL icon" />
+                        <p>MySQL</p>
+                    </div>
+                    
+                    
+                    
                 </div>
                     
 
