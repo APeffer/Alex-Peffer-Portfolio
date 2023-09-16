@@ -1,34 +1,19 @@
 import Navbar from './navbar';
-import Body from './body';
-import Home from './Home';
-import AboutMe from './AboutMe';
-import Projects from './Projects';
-import Games from './Games';
-import Contact from './Contact';
-import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
 
 
-function App() {
-  const [bodyContent, setBodyContent] = useState([<Home/>, <AboutMe/>, <Projects/>])
+export default function App({page}) {
 
+  console.log(page);
     return (
       <div className="App">
-        
-        <Navbar
-          onHome={() => setBodyContent([<Home/>,<AboutMe />,<Projects />])}
-          onAboutMe={() => setBodyContent(<AboutMe/>)}
-          onProjects={() => setBodyContent(<Projects/>)}
-          onGames={() => setBodyContent(<Games/>)}
-          onContact={() => setBodyContent(<Contact/>)}
-          />
-          <div className='' style={{height: '100%'}}>
-            <Body>
-              {bodyContent}
-            </Body>
-          </div>
+        <header>
+          <Navbar />
+        </header>
+        <main>
+
+        </main>
       </div>
     );
 }
-
-export default App

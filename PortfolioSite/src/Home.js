@@ -1,4 +1,6 @@
 import './Home.css';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 export default function Home() {
   return (
@@ -13,14 +15,14 @@ export default function Home() {
                     <h1 className="h1">Alex L. Peffer</h1>
                     <h2 className="h2">Front End Developer</h2>
                     <h4 className="h4">Air Force Veteran</h4>
-                    <p>React, Bootstrap, ASP.NET </p>
                 </div>
             </div>
             <div className="row">
                 <h2></h2>
             </div>
         </div>
-        
+        <AboutMe/>
+        <Projects/>
     </div>
   )
 }

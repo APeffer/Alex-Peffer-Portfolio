@@ -1,12 +1,56 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App.js';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './Home';
+import AboutMe from './AboutMe';
+import Navbar from './Navbar';
+import Contact from './Contact';
+import Projects from './Projects';
+import Games from './Games';
+import RootLayout from './Layouts/RootLayout';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout><Navbar/></RootLayout>,
+    children: [
+        {
+          path: "",
+          element: <Home/>,
+        },
+        {
+          path: "aboutme",
+          element: <AboutMe/>,
+        },
+        {
+          path: "projects",
+          element: <Projects/>,
+        },
+        {
+          path: "games",
+          element: <Games/>,
+        },
+        {
+          path: "contact",
+          element: <Contact/>,
+        },
+      ],
+    
+  }, 
+  
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
-    <App />
-  </div>
+  <React.StrictMode>
+    <>
+      <RouterProvider router={router} fallbackElement={<Home/>} />
+    </>
+    
+  </React.StrictMode>
 );
-
 

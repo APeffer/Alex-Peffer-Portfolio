@@ -1,5 +1,5 @@
 import { useState, Children} from "react"
-import PokemonApp from "./pokemonApp"
+import PokemonApp from "./Projects/pokemonApp"
 export default function MyGames() {
     const [projectFrame, setProjectFrame] = useState(<PokemonApp />)
 
