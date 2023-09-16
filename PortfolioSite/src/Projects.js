@@ -8,7 +8,7 @@ export default function MyGames() {
             
 
             <div className="text-center" id="projects-buttons">
-            <button><img src="/images/projectthumbnails/pokemonthumbnail.png" alt="Pokemon App Icon"/></button>
+            <button><img src="/images/projectthumbnails/PokemonThumbnail.png" alt="Pokemon App Icon"/></button>
             </div>
             
 
