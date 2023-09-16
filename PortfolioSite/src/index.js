@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import AboutMe from './AboutMe';
-import Navbar from './Navbar';
 import Contact from './Contact';
 import Projects from './Projects';
 import Games from './Games';
@@ -16,7 +15,7 @@ import RootLayout from './Layouts/RootLayout';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout><Navbar/></RootLayout>,
+    element: <RootLayout/>,
     children: [
         {
           path: "",
@@ -47,10 +46,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <>
       <RouterProvider router={router} fallbackElement={<Home/>} />
-    </>
-    
   </React.StrictMode>
 );
 

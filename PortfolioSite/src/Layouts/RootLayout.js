@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../Navbar'
-import { Outlet, ScrollRestoration , Link } from 'react-router-dom'
+import Navbar from '../../src/Navbar'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 
 export default function RootLayout() {
   return (
