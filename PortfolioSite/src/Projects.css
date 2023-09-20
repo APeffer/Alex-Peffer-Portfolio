@@ -91,7 +91,7 @@
     display: inline;
     text-decoration: none;
     border: solid;
-    border-color: black;
+    border-color: white;
     box-shadow: 10px 10px 10px black;
 
 }
@@ -111,7 +111,7 @@
     text-decoration: none;
     border: solid;
     border-left: none;
-    border-color: black;
+    border-color: white;
     box-shadow: 10px 10px 10px black;
 
 }
