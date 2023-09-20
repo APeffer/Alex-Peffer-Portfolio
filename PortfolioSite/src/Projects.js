@@ -1,18 +1,46 @@
-//import { useState} from "react"
-//import PokemonApp from "./Projects/pokemonApp"
+import "./Projects.css"
 export default function MyGames() {
-    //const [projectFrame, setProjectFrame] = useState(<PokemonApp />)
 
     return (
-        <div id="project-container text-center">
+        <div id="project-container">
             
+            <h1 className="project-container-title">Projects</h1>
 
-            <div className="text-center" id="projects-buttons">
-            <button><img src="/images/projectthumbnails/PokemonThumbnail.png" alt="Pokemon App Icon"/></button>
-            </div>
-            
+            {/* Current Site */}
+            <div className="project-flex-container" >
+                <div className="project">
+                    <div className="proj-img-container"> 
+                        <img className="project-image" src="/images/projectthumbnails/portfolioprojectthumbnail.png" alt="Pokemon App Icon"/>
+                        <div className="proj-container-overlay"> 
+                            <h2 className="project-title">This Site!</h2>
+                        </div>
+                    </div>
+                    <button className= "project-button-try">Try</button>
+                    <a href="https://github.com/apeffer" target="_blank" rel="noopener noreferrer">
+                        <button className= "project-button-source">
+                            <img src="/images/icons/github-mark-white.png" alt="github icon" />
+                            Source
+                        </button>
+                    </a>
+                </div>
 
-            
+                {/* Pokemon App */}
+                <div className="project">
+                    <div className="proj-img-container">
+                        <img className="project-image" src="/images/projectthumbnails/PokemonThumbnail.png" alt="Pokemon App Icon"/>
+                        <div className="proj-container-overlay">
+                            <h2 className="project-title">Pokemon App</h2>
+                        </div>
+                    </div>
+                    <button className= "project-button-try">Try</button>
+                    <a href="https://github.com/APeffer/Pokemon-App" target="_blank" rel="noopener noreferrer">
+                        <button className= "project-button-source">
+                            <img src="/images/icons/github-mark-white.png" alt="github icon" />
+                            Source
+                        </button>
+                    </a>
+                </div>
+            </div>          
         </div>
     )
 }

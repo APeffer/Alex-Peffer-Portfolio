@@ -1,0 +1,145 @@
+#project-container {
+  
+    text-align: center;
+    background-image: url("../public/images/backgrounds/paperbackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: transparent;
+}
+
+.project-container-title {
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.project-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#project-container h1 {
+    font-weight: bold;
+    display: block;
+}
+
+.project {
+    width: 300px;
+    margin: 50px;
+}
+
+.proj-container-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s ease;
+    background-color: brown;
+    justify-content: center;
+    
+}
+
+.project-title {
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.proj-img-container {
+    position: relative;
+    width: 100%;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.proj-img-container:hover .proj-container-overlay {
+    opacity: 1;
+}
+
+
+.project-button-try {
+    float: left;
+    margin: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: calc(50%);
+    height: 60px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(89, 150, 89);
+    color: white;
+    display: inline;
+    text-decoration: none;
+    border: solid;
+    border-color: black;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.project-button-source {
+    float: left;
+    margin: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 60px;
+    width: calc(50%);
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(84, 121, 175);
+    color: white;
+    display: inline;
+    text-decoration: none;
+    border: solid;
+    border-left: none;
+    border-color: black;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.project-button-try:hover {
+    
+    background-image: linear-gradient(black, rgb(104, 255, 101), black);
+
+}
+
+.project-button-source:hover {
+    
+    background-image: linear-gradient(black, rgb(33, 85, 255), black);
+
+}
+
+.project-button-source img{
+    display: inline-block;
+    width: 45px;
+    padding: 5px 10px 10px 0px;
+}
+
+.project-button-source a{
+    color: white;
+    text-decoration: none;
+}
+
+.preoject-button-source a:visited{
+    color: white;
+    text-decoration: none;
+}

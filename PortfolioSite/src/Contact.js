@@ -17,11 +17,11 @@ export default function Contact() {
               
 
               {/* EMAIL INPUT */}
-              <label className="form-label" for="emailInput">Email: </label>
+              <label className="form-label" htmlFor="emailInput">Email: </label>
               <input className="form-control" type="email" placeholder='myname@email.com' id='emailInput'></input>
 
               {/* REASON FOR CONTACT*/}
-              <label className='form-label' for="">Reason for Contact: </label>
+              <label className='form-label' htmlFor=''>Reason for Contact: </label>
               
 
             </form>
