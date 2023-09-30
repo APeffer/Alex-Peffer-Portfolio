@@ -1,5 +1,7 @@
 .pokemonApp-Container {
     display: block;
+    /* make container full height of screen minus navbar height*/
+    min-height: calc(100vh - 57px);
     width: 100%;
     z-index: 0;
     background-color:#111418;

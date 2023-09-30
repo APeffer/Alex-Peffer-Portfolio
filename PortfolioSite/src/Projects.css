@@ -1,5 +1,5 @@
 #project-container {
-  
+    min-height: calc(100vh - 57px);
     text-align: center;
     background-image: url("../public/images/backgrounds/paperbackground.jpg");
     background-attachment: fixed;
@@ -22,6 +22,7 @@
 }
 
 #project-container h1 {
+    padding-top: 50px;
     font-weight: bold;
     display: block;
 }

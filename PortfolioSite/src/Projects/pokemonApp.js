@@ -75,6 +75,7 @@ class PokemonApp extends Component {
             <p>This Pokemon themed application was the first project I built to learn about APIs. 
                 It uses the <a href='https://pokeapi.co/'>PokeApi</a> RESTful Pokemon API.
             </p>
+            <br/>
             <p>
               To use, enter any Pokemon name or number 1-1010.
             </p>

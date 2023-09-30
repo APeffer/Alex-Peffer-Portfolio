@@ -7,10 +7,10 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import AboutMe from './AboutMe';
-import Contact from './Contact';
 import Projects from './Projects';
 import Games from './Games';
 import RootLayout from './Layouts/RootLayout';
+import PokemonApp from './Projects/pokemonApp';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
           element: <Games/>,
         },
         {
-          path: "contact",
-          element: <Contact/>,
+          path: "pokemonapp",
+          element: <PokemonApp/>,
         },
       ],
     

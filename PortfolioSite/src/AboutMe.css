@@ -1,6 +1,7 @@
 @import './Animations.css';
 
 #aboutme-container {
+    min-height: calc(100vh - 57px);
     background-image: url("../public/images/backgrounds/Planetbackground.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -11,10 +12,12 @@
 }
 
 #aboutme-header {
+    
     background-color: rgba(250,250,250,0.05);
 }
 
 #skills-header {
+    padding-top: 30px;
     text-shadow: 3px 3px 3px #000000;
 }
 
