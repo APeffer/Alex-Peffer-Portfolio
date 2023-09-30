@@ -1,7 +1,7 @@
 @import './Animations.css';
 
 #aboutme-container {
-    min-height: calc(100vh - 57px);
+    min-height: 100vh;
     background-image: url("../public/images/backgrounds/Planetbackground.jpg");
     background-attachment: fixed;
     background-position: center;

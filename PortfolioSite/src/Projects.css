@@ -1,5 +1,5 @@
 #project-container {
-    min-height: calc(100vh - 57px);
+    min-height: 100vh;
     text-align: center;
     background-image: url("../public/images/backgrounds/paperbackground.jpg");
     background-attachment: fixed;
