@@ -37,6 +37,10 @@ const router = createBrowserRouter([
           path: "pokemonapp",
           element: <PokemonApp/>,
         },
+        {
+          path: "projects/pokemonapp",
+          element: <PokemonApp/>,
+        },
       ],
     
   }, 
