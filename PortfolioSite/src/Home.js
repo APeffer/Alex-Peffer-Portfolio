@@ -13,12 +13,12 @@ export default function Home() {
                 </div>
                 <div className="col-md-7 my-auto text-center" id='splash-text'>
                     <h1 className="h1">Alex L. Peffer</h1>
-                    <h2 className="h2">Front End Developer</h2>
+                    <h2 className="h2">Software Engineer</h2>
+                    <h2 className='h2'>Full Stack Web Developer</h2>
                     <h4 className="h4">Air Force Veteran</h4>
                 </div>
             </div>
             <div className="row">
-                <h2></h2>
             </div>
         </div>
         <AboutMe/>
