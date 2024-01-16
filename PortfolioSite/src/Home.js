@@ -18,8 +18,6 @@ export default function Home() {
                     <h4 className="h4">Air Force Veteran</h4>
                 </div>
             </div>
-            <div className="row">
-            </div>
         </div>
         <AboutMe/>
         <Projects/>
