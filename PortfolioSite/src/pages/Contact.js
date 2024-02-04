@@ -19,7 +19,7 @@ export default function Contact() {
     setFormData({...formData, [e.target.name]: e.target.value})
   };
 
-  
+  // handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
     setBtnDisabled(true);
@@ -27,6 +27,7 @@ export default function Contact() {
     const serviceID = 'service_79iagf1';
     const templateID = 'template_vt1xpu1';
 
+    // try to send the form using emailjs
     try{
       emailjs.send(serviceID, templateID, formData, emailjsPublic)
         .then((response) => {
@@ -87,9 +88,6 @@ export default function Contact() {
             </form>
             <footer><span className='required'>*</span> = required field</footer>
       </div>
-      
-
-
     </div>
   )
 }

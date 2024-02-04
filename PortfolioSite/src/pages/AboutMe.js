@@ -15,7 +15,7 @@ export default function AboutMe() {
             <div className="p-5 p-md-5 text-center" id='aboutme-header'>
                 <h1>About Me</h1>
                 <p>
-                    After 6 years in the U.S. Air Force as an electrician, I decided I wanted to pursue my education in a field I was passionate about. 
+                    After serving for six year in the U.S. Air Force as an electrician, I decided I wanted to pursue my education in a field I was passionate about. 
                     I'm currently a senior at Texas State University majoring in Computer Science with a minor in Mass Communications. 
                     I enjoy the challenges of learning new tools and solving problems with computers and software. 
                 </p>             
