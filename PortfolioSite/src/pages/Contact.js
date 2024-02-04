@@ -13,13 +13,13 @@ export default function Contact() {
   const [bntText, setBtnText] = useState('Submit');
   const [btnDisabled, setBtnDisabled] = useState(false);
 
-
   const emailjsPublic = 'vwq2jhgzmEwsqnCcN';
 
   const handleInputChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value})
   };
 
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setBtnDisabled(true);
@@ -27,24 +27,31 @@ export default function Contact() {
     const serviceID = 'service_79iagf1';
     const templateID = 'template_vt1xpu1';
 
-    emailjs.send(serviceID, templateID, formData, emailjsPublic)
-      .then((response) => {
-        alert('Your message was sent successfully!');
-        console.log('Email sent successfully:', response);
-        setFormData({
-          name: '',
-          company: '',
-          email: '',
-          message: ''
+    try{
+      emailjs.send(serviceID, templateID, formData, emailjsPublic)
+        .then((response) => {
+          alert('Your message was sent successfully!');
+          console.log('Email sent successfully:', response);
+          setFormData({
+            name: '',
+            company: '',
+            email: '',
+            message: ''
+          })
+          setBtnText('Sent!');
         })
-        setBtnText('Sent!');
-        localStorage.setItem('')
-      })
-      .catch((err) => {
-        setBtnText('Submit');
-        alert(JSON.stringify(err));
-      });
+        .catch((err) => {
+          alert(JSON.stringify(err));
+        }
+      );
+    }
+    catch(error) {
+      setBtnText('Submit');
+      setBtnDisabled(false);
+      alert(error)
+    }
   }
+  
 
   return (
     <div>
