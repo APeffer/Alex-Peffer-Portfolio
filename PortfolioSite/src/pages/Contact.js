@@ -55,8 +55,6 @@ export default function Contact() {
   
 
   return (
-    <div>
-
       <div className='contact-container'>   
             <h1 className='mt-4 text-center'>Contact</h1>
             <form className="" onSubmit={handleSubmit}>
@@ -82,12 +80,12 @@ export default function Contact() {
               {/* MESSAGE INPUT*/}
               <div className='form-message'>
                 <label className='form-label' htmlFor='message'>Message: <span className='required'>*</span></label>
-                <textarea className="form-control" name='message' id='message' maxLength={255} onChange={handleInputChange} required></textarea>
+                <textarea className="form-control" name='message' id='message' maxLength={255} rows={6} onChange={handleInputChange} required></textarea>
               </div>
               <button className="btn btn-primary" disabled={btnDisabled} type='submit'>{bntText}</button>
             </form>
-            <footer><span className='required'>*</span> = required field</footer>
+            <small><span className='required'>*</span> = required field</small>
+            <footer>contact@apeffer.dev <br/> Austin, Texas</footer>
       </div>
-    </div>
   )
 }
