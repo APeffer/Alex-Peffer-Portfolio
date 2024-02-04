@@ -13,6 +13,9 @@ export default function Contact() {
   const [bntText, setBtnText] = useState('Submit');
   const [btnDisabled, setBtnDisabled] = useState(false);
 
+
+  const emailjsPublic = 'vwq2jhgzmEwsqnCcN';
+
   const handleInputChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value})
   };
@@ -24,7 +27,7 @@ export default function Contact() {
     const serviceID = 'service_79iagf1';
     const templateID = 'template_vt1xpu1';
 
-    emailjs.send(serviceID, templateID, formData, process.env.REACT_APP_EMAILJS_PUBLIC)
+    emailjs.send(serviceID, templateID, formData, emailjsPublic)
       .then((response) => {
         alert('Your message was sent successfully!');
         console.log('Email sent successfully:', response);
@@ -35,6 +38,7 @@ export default function Contact() {
           message: ''
         })
         setBtnText('Sent!');
+        localStorage.setItem('')
       })
       .catch((err) => {
         setBtnText('Submit');
