@@ -1,24 +1,52 @@
 @import './Animations.css';
 
-#aboutme-container {
+.aboutme-container {
     min-height: 100vh;
-    background-image: url("../public/images/backgrounds/Planetbackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    background-color: transparent;
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.aboutme-container p {
+    max-width: 900px;
+    margin: auto;
 }
 
 #aboutme-header {
-    
-    background-color: rgba(250,250,250,0.05);
+    color:white;
+    background-color: rgb(41, 41, 41);
 }
 
 #skills-header {
     padding-top: 30px;
-    text-shadow: 3px 3px 3px #000000;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skill-container ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    list-style: none;
+    padding: 20px;
+    width: 150px;
+}
+
+.skill:hover {
+    background-color: rgb(75, 75, 75);
 }
 
 #aboutme-body img {

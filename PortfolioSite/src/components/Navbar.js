@@ -14,11 +14,9 @@ export default function Navbar() {
             <div className="navbar-nav">
               <Link className="nav-link" to="aboutme">About Me</Link>
               <Link className="nav-link" to="projects">Projects</Link>
-              <Link className="nav-link" to="Games">Games</Link>
-
-              {/* future project
+              <Link className="nav-link" to="games">Games</Link>
               <Link className="nav-link" to="contact">Contact</Link>
-            */}
+
 
             </div>
           </div>

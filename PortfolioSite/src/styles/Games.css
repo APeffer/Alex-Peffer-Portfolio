@@ -1,0 +1,13 @@
+.games {
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+.games-container {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}

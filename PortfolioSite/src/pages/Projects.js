@@ -1,4 +1,4 @@
-import "./Projects.css"
+import "../styles/Projects.css"
 import { Link } from "react-router-dom"
 
 export default function MyGames() {
@@ -6,7 +6,7 @@ export default function MyGames() {
     return (
         <div id="project-container">
             
-            <h1 className="project-container-title">Projects</h1>
+            <h1>Projects</h1>
 
             {/* Current Site */}
             <div className="project-flex-container" >

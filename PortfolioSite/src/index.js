@@ -5,12 +5,13 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home';
-import AboutMe from './AboutMe';
-import Projects from './Projects';
-import Games from './Games';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
+import Games from './pages/Games';
 import RootLayout from './Layouts/RootLayout';
 import PokemonApp from './Projects/pokemonApp';
+import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         {
           path: "projects/pokemonapp",
           element: <PokemonApp/>,
+        },
+        {
+          path: "contact",
+          element: <Contact/>,
         },
       ],
     

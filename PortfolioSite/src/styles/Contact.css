@@ -1,0 +1,25 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.contact-container form {
+    justify-content: space-between;
+}
+
+.contact-container form div {
+    padding: 10px 0px 10px 0px;
+}
+
+.form-first {
+
+}
+
+.form-last {
+
+}

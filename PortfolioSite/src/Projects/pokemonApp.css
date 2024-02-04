@@ -1,5 +1,6 @@
 .pokemonApp-Container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     z-index: 0;
