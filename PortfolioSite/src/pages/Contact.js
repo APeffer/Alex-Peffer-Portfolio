@@ -47,11 +47,11 @@ export default function Contact() {
 
       <div className='contact-container'>   
             <h1 className='mt-4 text-center'>Contact</h1>
-            <form className="m-4" onSubmit={handleSubmit}>
+            <form className="" onSubmit={handleSubmit}>
 
               {/* NAME INPUT */}
               <div className='form-name'>
-                <label className="form-label" htmlFor='name'>Name: <span>*</span></label>
+                <label className="form-label" htmlFor='name'>Name: <span className='required'>*</span></label>
                 <input className="form-control"  type="text" name='name' id='name' onChange={handleInputChange} required></input>
               </div>
 
@@ -63,18 +63,18 @@ export default function Contact() {
 
               {/* EMAIL INPUT */}
               <div className='form-email'>
-                <label className="form-label" htmlFor='email'>Email:<span>*</span></label>
+                <label className="form-label" htmlFor='email'>Email: <span className='required'>*</span></label>
                 <input className="form-control" type="email" placeholder='myname@email.com' name='email' id='email' onChange={handleInputChange} required></input>
               </div>
 
               {/* MESSAGE INPUT*/}
               <div className='form-message'>
-                <label className='form-label' htmlFor='message'>Message:<span>*</span></label>
+                <label className='form-label' htmlFor='message'>Message: <span className='required'>*</span></label>
                 <textarea className="form-control" name='message' id='message' maxLength={255} onChange={handleInputChange} required></textarea>
               </div>
               <button className="btn btn-primary" disabled={btnDisabled} type='submit'>{bntText}</button>
             </form>
-            <footer>* = required field</footer>
+            <footer><span className='required'>*</span> = required field</footer>
       </div>
       
 

@@ -10,16 +10,13 @@
 
 .contact-container form {
     justify-content: space-between;
+    margin: 0;
 }
 
 .contact-container form div {
     padding: 10px 0px 10px 0px;
 }
 
-.form-first {
-
-}
-
-.form-last {
-
+.required {
+    color: red;
 }
