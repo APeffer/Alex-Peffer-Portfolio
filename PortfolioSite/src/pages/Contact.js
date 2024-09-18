@@ -85,7 +85,8 @@ export default function Contact() {
               <button className="btn btn-primary" disabled={btnDisabled} type='submit'>{bntText}</button>
             </form>
             <small><span className='required'>*</span> = required field</small>
-            <footer>contact@apeffer.dev <br/> Austin, Texas</footer>
+            <br></br>
+            <footer><small>contact@apeffer.dev <br/> Austin, Texas</small></footer>
       </div>
   )
 }
