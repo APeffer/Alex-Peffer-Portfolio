@@ -26,9 +26,6 @@
 }
 
 .contact-container footer {
-    position: absolute;
-    bottom: 15px;
-    left: calc(50% - 74px);
     text-align: center;
 }
 
